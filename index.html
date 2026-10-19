@@ -922,7 +922,7 @@
             <div class="flex flex-wrap justify-center gap-3 mb-16" id="gallery-filters">
                 <button onclick="filterGallery('semua', this)" class="px-6 py-2.5 bg-dark text-white rounded-full text-sm font-semibold transition-colors filter-btn">Semua</button>
                 <button onclick="filterGallery('litigasi', this)" class="px-6 py-2.5 bg-surface text-textMuted hover:text-dark rounded-full text-sm font-semibold transition-colors filter-btn">Litigasi</button>
-                <button onclick="filterGallery('Non Litigasi', this)" class="px-6 py-2.5 bg-surface text-textMuted hover:text-dark rounded-full text-sm font-semibold transition-colors filter-btn">Non Litigasi</button>
+                <button onclick="filterGallery('nonlitigasi', this)" class="px-6 py-2.5 bg-surface text-textMuted hover:text-dark rounded-full text-sm font-semibold transition-colors filter-btn">Non Litigasi</button>
                 <button onclick="filterGallery('konsultasi', this)" class="px-6 py-2.5 bg-surface text-textMuted hover:text-dark rounded-full text-sm font-semibold transition-colors filter-btn">Konsultasi</button>
             </div>
 
@@ -958,7 +958,17 @@
                     <p class="text-textMuted text-sm text-center">Kantor YLBHK-CKI Pusat</p>
                 </div>
                                                               
-                <!-- Image Card 3: Konsultasi -->
+                <!-- Image Card 3: Non Litigasi -->
+                <div class="gallery-item nonlitigasi bg-white rounded-3xl p-6 shadow-sm border border-gray-100 cursor-pointer hover:shadow-soft transition-all duration-300 flex flex-col group"
+                     onclick="openPhotoDetail('Mediasi01.png', 'Mencari Titik Temu dalam Sengketa Tanah Waris Keluarga ', 'Galeri foto ini merekam jalannya proses mediasi dalam sengketa tanah warisan yang tengah bergulir. Bermula dari keluhan ahli waris yang merasa hak atas tanah leluhurnya telah diklaim dan dikuasai secara sepihak, mediasi ini ditempuh sebagai jalan tengah untuk mengurai benang kusut. Lewat pemaparan riwayat tanah, adu bukti dokumen, hingga dialog antarpihak, proses ini diharapkan mampu menghadirkan solusi yang seadil-adilnya sebelum konflik bereskalasi ke jalur peradilan.')">
+                    <h3 class="text-xl font-bold text-textDark mb-4 text-center group-hover:text-primary transition-colors">Mencari Titik Temu dalam Sengketa Tanah Waris Keluarga</h3>
+                    <div class="w-full rounded-2xl overflow-hidden mb-4 flex-grow relative">
+                        <img src="Konsultasi Warisan.png" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <p class="text-textMuted text-sm text-center">Kantor Kelurahan Balekambang</p>
+                </div>
+
+                <!-- Image Card 4: Konsultasi -->
                 <div class="gallery-item konsultasi bg-white rounded-3xl p-6 shadow-sm border border-gray-100 cursor-pointer hover:shadow-soft transition-all duration-300 flex flex-col group"
                      onclick="openPhotoDetail('Konsultasi Warisan.png', 'Konsultasi mengenai Hak Waris', 'Memberikan pemahaman dan solusi hukum yang tepat terkait sengketa harta waris, khususnya dalam menghadapi klaim sepihak atas tanah milik keluarga.')">
                     <h3 class="text-xl font-bold text-textDark mb-4 text-center group-hover:text-primary transition-colors">Konsultasi mengenai Hak Waris</h3>
